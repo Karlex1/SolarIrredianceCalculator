@@ -142,7 +142,7 @@ def calc_Ho(date_str, latitude_deg):
     phi_rad = math.radians(latitude_deg)
     delta = solar_declination(n)
     omega_s = sunset_hour_angle(phi_rad, delta)
-    Ho = (24 * 60 / math.pi) * Gsc * (1 + 0.034 * math.cos(2 * math.pi * n / 365)) * (
+    Ho = (24 * 3600 / math.pi) * Gsc * (1 + 0.034 * math.cos(2 * math.pi * n / 365)) * (
         math.cos(phi_rad) * math.cos(delta) * math.sin(omega_s) +
         omega_s * math.sin(phi_rad) * math.sin(delta)
     )
