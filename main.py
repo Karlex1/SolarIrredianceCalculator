@@ -199,3 +199,12 @@ with col2:
             st.metric(label="📆 Day of Year", value=f"{datetime_day}")
             st.metric(label="☀️ Extraterrestrial Irradiance (Io)", value=f"{io_value:.4f} kW/m²")
             st.metric(label="📈 Daily Solar Radiation (Ho)", value=f"{ho_value:.4f} MJ/m²/day")
+        # ------------------ 👣 Custom Footer ------------------ #
+st.markdown("""
+    <hr style="border: 0.5px solid rgba(255, 255, 255, 0.1); margin-top: 3rem;" />
+    <div style="text-align: center; padding: 1.5rem 0; color: #ccc; font-size: 0.9rem;
+                background-color: rgba(255, 255, 255, 0.05); border-radius: 15px; 
+                backdrop-filter: blur(6px); box-shadow: 0 0 10px rgba(255,255,255,0.15);">
+        Made with ❤️ @<a href="https://www.github.com/karlex1">Sanchit(Karlex) </a>
+            </div>
+""", unsafe_allow_html=True)
