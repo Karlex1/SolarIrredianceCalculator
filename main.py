@@ -17,7 +17,7 @@ st.markdown("""
 
     .block-container {
         padding: 2rem;
-        max-width: 850px;
+        max-width: 600px;
         margin: auto;
         background: rgba(255, 255, 255, 0.07);  /* More glassy */
         backdrop-filter: blur(12px);
